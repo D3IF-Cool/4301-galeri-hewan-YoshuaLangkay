@@ -13,6 +13,7 @@ class MainAdapter(private val data: List<Hewan>) :
                 fun bind(hewan: Hewan) = with(binding){
                     namaTextView.text = hewan.nama
                     latinTextView.text = hewan.namaLatin
+                    jenisHewan.text = hewan.jenisHewan
                     imageView.setImageResource(hewan.imageResId)
                 }
             }
